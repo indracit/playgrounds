@@ -1,0 +1,123 @@
+
+    .home-page {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f8f8f8;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin-right: 1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .icons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .featured-product {
+      display: flex;
+      margin-bottom: 2rem;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .featured-product img {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .featured-product-info {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .featured-product-info h2 {
+      margin-bottom: 1rem;
+    }
+
+    .featured-product-info .price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f8f8f8;
+      margin-top: 2rem;
+    }
