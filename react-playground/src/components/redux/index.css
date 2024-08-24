@@ -1,0 +1,10 @@
+.redux-button{
+    background-color:rgb(64, 65, 65)
+}
+
+.counter{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    width: 500px;
+}
