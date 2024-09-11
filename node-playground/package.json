@@ -13,6 +13,10 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "moleculer": "^0.14.34",
-    "mongoose": "^8.6.1"
+    "mongoose": "^8.6.1",
+    "seneca": "^4.0.0-rc4",
+    "seneca-basic": "^1.0.0",
+    "seneca-entity": "^28.1.0",
+    "seneca-transport": "^8.2.0"
   }
 }

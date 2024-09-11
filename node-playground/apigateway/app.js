@@ -64,18 +64,18 @@ process.on('SIGINT',async function () {
       process.exit(0);
   }
 });
-process.on('unhandledRejection', (reason, p) => {
-  console.log("###########################################################");
-  console.log("Application Error");
-  console.log("###########################################################");
-  console.log('Unhandled Rejection at:', p, 'reason:', reason);
+// process.on('unhandledRejection', (reason, p) => {
+//   console.log("###########################################################");
+//   console.log("Application Error");
+//   console.log("###########################################################");
+//   console.log('Unhandled Rejection at:', p, 'reason:', reason);
 
-});
+// });
 
-process.on('uncaughtException',async function (err) {
-  console.log("###########################################################");
-  console.log("Application Error");
-  console.log("###########################################################");
-  console.log('uncaughtException :', err);
-  //logMaintainanceReason({Time:Date(), Error: `${err}`});
-});
+// process.on('uncaughtException',async function (err) {
+//   console.log("###########################################################");
+//   console.log("Application Error");
+//   console.log("###########################################################");
+//   console.log('uncaughtException :', err);
+//   //logMaintainanceReason({Time:Date(), Error: `${err}`});
+// });
