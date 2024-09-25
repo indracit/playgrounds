@@ -1,5 +1,5 @@
 const amqp 	= require('amqplib');
-
+const {notification} = require('../../notification/index')
 const URL = 'amqp://guest:guest@127.0.0.1:5672/indracit';
 const QUEUENAME = 'LOGQ';
 
@@ -16,6 +16,10 @@ const QUEUENAME = 'LOGQ';
         if (msg !== null) {
           try {
             console.log(msg.content.toString());
+            if(msg.content.url = '/notification') {
+              notification();
+            }
+            
             RabbitChannel.ack(msg);
           } catch (error) {
             console.error('Error processing message:', error);

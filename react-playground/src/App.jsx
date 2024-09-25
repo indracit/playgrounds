@@ -4,12 +4,14 @@ import HomePage from './components/home/home';
 import LoginPage from './components/login/Login'
 import SignupPage from './components/signup/signup';
 import Redux from './components/redux/redux';
+import Firebase from './components/firebase/Firebase';
 function App() {
 
   return (
     <>
     <Routes>
-        <Route path="/" element={<Redux/>} />
+        <Route path="/" element={<Firebase/>} />
+        <Route path="/redux" element={<Redux/>} />
         <Route path="/login" element={<LoginPage/>} />
          <Route path="home" element={<HomePage/>} />
          <Route path ="signup" element={<SignupPage />} />

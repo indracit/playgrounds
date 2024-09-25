@@ -24,7 +24,7 @@ var corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use((req,res,next)=>{
-  publishMessage(JSON.stringify({payload:req.body,url:req.origin}));
+  publishMessage(JSON.stringify({payload:req.body,url:req.path}));
   next();
 })
 
